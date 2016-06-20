@@ -206,8 +206,8 @@
     <h2>Дивизион A</h2>
       <div class="row championship">
           <div class="col-md-1 game-date">
-              24.04
-            </div>
+            24.04
+          </div>
             <a href="#">
             <div class="col-md-4 team-game">
               <span>Бульдоги (Киев)</span>

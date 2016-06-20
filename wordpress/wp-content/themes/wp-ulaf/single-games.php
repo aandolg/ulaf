@@ -1,15 +1,10 @@
 <?php get_header(); ?>
 <section class="container container-content">
   <div class="row single-game">
+
     <h1><?php the_title(); ?></h1>
-              <?php // get raw date
-                $date = get_field('date', false, false);
-                // make date object
-                $date = new DateTime($date);
-                ?>
-                <?php
-                ?>
-                <?php echo $date->format('j M Y');?>
+    <?php $date = get_field('date', false, false); $date = new DateTime($date); ?>
+    <?php echo $date->format('j M Y');?>
     <div class="col-md-12 team-single-game">
       <tr>
         <td>
@@ -355,9 +350,9 @@
     </div>
     <div class="col-md-12">
 
-    </div>
+    </div><!-- row -->
 
-      </div>row -->
+  </div><!-- single-game -->
 </section><!-- container container-content -->
 
 <?php get_footer(); ?>

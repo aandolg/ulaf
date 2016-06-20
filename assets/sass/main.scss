@@ -130,53 +130,106 @@ picture {
 }
 .header-nav {
   padding-top: 20px;
-  .headnav {
-    @extend .clearfix;
-    @extend .justify-child;
+  ul {
+    padding: 0;
   }
-  li {
+  .headnav {
+    @extend .justify-child;
+    /* first level */
+    li {
+      position: relative;
 
-    display: inline-block;
-    .sub-menu {
-      position: absolute;
-      z-index: 50;
-      top: 25px;
-
-      display: none;
+      display: inline-block;
 
       padding: 10px;
+      a {
+        font-size: 18px;
 
-      background-color: $nigger-blue;
-      li {
-        margin-bottom: 5px;
-        a {
-          white-space: nowrap;
+        text-decoration: none;
 
-          color: #fff;
+        color: #fff;
+      }
+      &:hover {
+        .sub-menu {
+          display: block;
         }
-        &:hover {
+        a {
+          color: $gold;
+        }
+      }
+      /* second level */
+      .sub-menu {
+        position: absolute;
+        z-index: 50;
+        top: 45px;
+        left: 0;
+
+        display: none;
+
+        padding: 0;
+
+        background-color: $nigger-blue;
+        li {
+          margin-bottom: 5px;
           a {
-            color: $gold;
+            white-space: nowrap;
+
+            color: #fff;
+          }
+          &:hover {
+            a {
+              color: $gold;
+            }
+            .sub-menu {
+              display: block;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+            li {
+              margin-bottom: 5px;
+              a {
+                white-space: nowrap;
+
+                color: #fff;
+              }
+              &:hover {
+                a {
+                  color: $gold;
+                }
+                .sub-menu {
+                  display: block;
+                }
+              }
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
           }
         }
-        &:last-child {
-          margin-bottom: 0;
+        .sub-menu {
+          position: absolute;
+          top: 0;
+          left: 220px;
+
+          display: none;
+
+          padding-top: 0;
+          padding-bottom: 0;
+          li {
+            display: block;
+            a {
+              text-align: center;
+
+              color: white;
+            }
+            &:hover {
+              a {
+                color: $gold;
+              }
+            }
+          }
         }
-      }
-    }
-    a {
-      font-size: 18px;
-
-      text-decoration: none;
-
-      color: #fff;
-    }
-    &:hover {
-      .sub-menu {
-        display: block;
-      }
-      a {
-        color: $gold;
       }
     }
   }
@@ -319,6 +372,7 @@ picture {
         right: 0;
         bottom: 0;
         left: 0;
+
         content: '';
         transition: all .6s;
 
@@ -380,7 +434,7 @@ picture {
   }
 }
 .section-news.category {
-background-image: url(../img/bg/body-bg.png);
+  background-image: url(../img/bg/body-bg.png);
 }
 /**
  * PAGE AND SINGLE
@@ -520,7 +574,7 @@ article {
 footer {
   height: 60px;
 
-  background-color:#000215;
+  background-color: #000215;
   .social {
     padding-top: 12px;
 
@@ -549,13 +603,13 @@ footer {
   border-top: 3px solid #000215;
 }
 .player-card {
-.player-main-photo {
-  padding: 0;
-  img {
-    height:300px;
-  }
-}
   height: 300px;
+  .player-main-photo {
+    padding: 0;
+    img {
+      height: 300px;
+    }
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -1086,12 +1140,14 @@ footer {
     color: $gold;
     &:hover {
       text-decoration: none;
+
       color: #c61e03;
     }
   }
   img {
     &:hover {
       transition: all .5s;
+
       box-shadow: 0 0 20px 5px rgba(255, 255, 255, 1);
     }
   }
@@ -1198,61 +1254,68 @@ footer {
 }
 .game-info {
   h2 {
-    color:$gold;
     margin-bottom: -20px;
+
+    color: $gold;
   }
-.championship {
-  &:hover {
-    transition: all .3s;
-    box-shadow: 0 0 20px 5px #fff;
-    background-color: rgba(50,50,48,.1);
-  }
-  margin: 30px 0;
+  .championship {
+    margin: 30px 0;
 
-  border-bottom: 1px solid grey;
-  background-color: rgba(50,50,48,.5);
+    border-bottom: 1px solid grey;
+    background-color: rgba(50,50,48,.5);
+    &:hover {
+      transition: all .3s;
 
-  div {
-    border-right: 1px solid grey;
-    height:75px;
-  }
-  .game-date {
-    font-size: 30px;
-    text-align: center;
-    padding-top: 7px;
-  }
-  .game-score {
-    font-size: 40px;
+      background-color: rgba(50,50,48,.1);
+      box-shadow: 0 0 20px 5px #fff;
+    }
+    div {
+      height: 75px;
 
-    padding-top: 7px;
+      border-right: 1px solid grey;
+    }
+    .game-date {
+      font-size: 30px;
 
-    text-align: center;
-    span {
-      width: 39px;
-      height: 60px;
-      margin-right: 3px;
+      padding-top: 7px;
 
-      color: $gold;
+      text-align: center;
+    }
+    .game-score {
+      font-size: 40px;
+
+      padding-top: 7px;
+
+      text-align: center;
+      span {
+        width: 39px;
+        height: 60px;
+        margin-right: 3px;
+
+        color: $gold;
+      }
+    }
+    .team-game {
+      font-size: 30px;
+
+      display: flex;
+
+      color: #0070a7;
+
+      justify-content: space-between;
+      align-items: center;
+      img {
+        max-height: 70px;
+      }
+    }
+    .team-city {
+      font-size: 20px;
+
+      margin-top: 15px;
+
+      text-align: center;
     }
   }
-  .team-game {
-    img {
-      max-height: 70px;
-    }
-    font-size: 30px;
-    display: flex;
-    color: #0070a7;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .team-city {
-    font-size: 20px;
-
-    margin-top: 15px;
-
-    text-align: center;
-  }
-}
 }
 .single-game {
   color: #fff;
@@ -1283,25 +1346,27 @@ footer {
 }
 .players-game-stats {
   text-align: center;
-  ul{
+  ul {
     border-bottom: 1px solid grey;
     li {
-      display:flex;
-        justify-content:space-between;
+      display: flex;
+
+      justify-content: space-between;
     }
   }
   .second-team-players {
-    display:flex;
-    justify-content:flex-start;
+    display: flex;
+
+    justify-content: flex-start;
     a {
-        padding-left: 130px;
+      padding-left: 130px;
     }
   }
 }
 .team-game-score {
   margin-bottom: 20px;
   .gold-score {
-    color:$gold;
+    color: $gold;
   }
   td {
     text-align: center;
