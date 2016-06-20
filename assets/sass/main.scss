@@ -130,12 +130,11 @@ picture {
 }
 .header-nav {
   padding-top: 20px;
-  ul {
+  .headnav {
     @extend .clearfix;
     @extend .justify-child;
   }
   li {
-    position: relative;
 
     display: inline-block;
     .sub-menu {
