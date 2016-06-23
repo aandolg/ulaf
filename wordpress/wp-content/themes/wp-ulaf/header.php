@@ -27,10 +27,10 @@
   <header class="navbar">
     <div class="container">
       <div class="row">
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-2 col-xs-2">
           <a href="http://ulaf.pp.ua/" class="navbar-brand"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
         </div>
-        <div class="col-md-11">
+        <div class="col-md-11 col-sm-10 col-xs-10">
           <nav class="header-nav">
             <?php wpeHeadNav(); ?>
           </nav>
@@ -42,7 +42,7 @@
     <section class="section-teams">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-md-12-teams">
+                <div class="col-md-12 col-md-12-teams col-sm-12 col-xs-12">
                     <ul class="clearfix">
                       <ul class="all-review-page">
                           <?php

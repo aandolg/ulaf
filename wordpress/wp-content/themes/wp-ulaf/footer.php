@@ -2,11 +2,11 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-sm-6 col-xs-6">
               <p>© Ulaf 2016</p>
             </div><!-- col-sm-6 -->
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-sm-6 col-xs-6">
               <ul class="list-inline social">
                 <li>
                   <a href="mailto:info@ulafua.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/email.png" alt="ulaf"></a>
