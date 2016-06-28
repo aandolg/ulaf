@@ -131,8 +131,8 @@ picture {
 
       background-color: $nigger-blue;
       li {
+        width: 100%;
         margin-bottom: 5px;
-        width:100%;
         &:hover > ul {
           display: block !important;
         }
@@ -144,7 +144,6 @@ picture {
           display: none !important;
 
           margin-top: -5px;
-
         }
         a {
           white-space: nowrap;
@@ -1331,17 +1330,20 @@ footer {
 .gallery {
   li {
     display: inline-block;
-    padding-right:15px;
-    padding-bottom:15px;
+
+    padding-right: 15px;
+    padding-bottom: 15px;
     img {
-      width:265px;
-      height:180px;
+      width: 265px;
+      height: 180px;
+
       border-radius: 5%;
       &:hover {
-    transition: all .3s;
-    box-shadow: 0 0 20px 5px #fff;
-    background-color: rgba(50,50,48,.1);
-  }
+        transition: all .3s;
+
+        background-color: rgba(50,50,48,.1);
+        box-shadow: 0 0 20px 5px #fff;
+      }
     }
   }
 }
@@ -1446,15 +1448,40 @@ footer {
   }
 }
 @media (max-width:475px) {
+  .navbar {
+    .col-xs-10 {
+      width: 100%;
+    }
+    .navbar-brand {
+      display: none !important;
+    }
+  }
   .header-nav {
     li {
       a {
         font-size: 10px;
       }
     }
+    .headnav {
+      margin-top: -20px;
+    }
   }
   .owl-home-slide {
     display: none !important;
+  }
+  .footer {
+    .social {
+      text-align: center;
+    }
+    .subscribe {
+      width: 100%;
+      li {
+        width: 35px;
+      }
+    }
+    .ulaf-year {
+      display: none !important;
+    }
   }
 }
 /* media query*/

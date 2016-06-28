@@ -1,12 +1,12 @@
       <footer>
         <div class="container">
-          <div class="row">
+          <div class="row footer">
 
-            <div class="col-sm-6 col-sm-6 col-xs-6">
+            <div class="col-sm-3 col-sm-3 col-xs-3 ulaf-year">
               <p>© Ulaf 2016</p>
             </div><!-- col-sm-6 -->
 
-            <div class="col-sm-6 col-sm-6 col-xs-6">
+            <div class="col-sm-9 col-sm-9 col-xs-9 subscribe">
               <ul class="list-inline social">
                 <li>
                   <a href="mailto:info@ulafua.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/email.png" alt="ulaf"></a>
