@@ -1483,8 +1483,15 @@ footer {
       display: none !important;
     }
   }
-}
-/* media query*/
 
+.description {
+  font-size: 10px;
+}
+}
+
+/* media query*/
+ .owl-controls {
+  display:none !important;
+}
 
 @import 'import/print';
