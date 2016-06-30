@@ -1090,6 +1090,11 @@ footer {
     border-bottom: 1px solid grey;
     div {
       border: none;
+      overflow:hidden;
+      img {
+        width:370px;
+        height:auto;
+      }
     }
   }
   a {

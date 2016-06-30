@@ -2,18 +2,18 @@
 
 <!-- Home Slider -->
   <div class="col-md-12 col-sm-12 col-xs-12 owl-home-slide">
-                      <?php if( have_rows('slider') ): ?>
-                    <?php while( have_rows('slider') ): the_row();
+        <?php if( have_rows('slider') ): ?>
+        <?php while( have_rows('slider') ): the_row();
                       // vars
-                      $link = get_sub_field('slider_link');
-                      $link2 = get_sub_field('slider_link2');
-                      $image = get_sub_field('slider_image');
-                      $content = get_sub_field('slider_title');
-                      $description = get_sub_field('slider_description'); ?>
-        <div class="item-slide">
-          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-          <h1 class="slider_title"><?php echo $content; ?></h1>
-          <h5 class="descr"><?php echo $description; ?></h5>
+        $link = get_sub_field('slider_link');
+        $link2 = get_sub_field('slider_link2');
+        $image = get_sub_field('slider_image');
+        $content = get_sub_field('slider_title');
+        $description = get_sub_field('slider_description'); ?>
+      <div class="item-slide">
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+            <h1 class="slider_title"><?php echo $content; ?></h1>
+            <h5 class="descr"><?php echo $description; ?></h5>
         <div class="slider_but">
              <?php if( $link ): ?>
             <a href="<?php echo $link; ?>" class="btn btn-primary">Присоединяйтесь</a>
