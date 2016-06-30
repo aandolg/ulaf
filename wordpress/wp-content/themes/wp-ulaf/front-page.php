@@ -1,5 +1,6 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
 
+<!-- Home Slider -->
   <div class="col-md-12 col-sm-12 col-xs-12 owl-home-slide">
                       <?php if( have_rows('slider') ): ?>
                     <?php while( have_rows('slider') ): the_row();
@@ -24,7 +25,10 @@
       </div><!-- item-slide -->
                  <?php endwhile; ?>
                   <?php endif; ?>
-    </div><!-- /.owl-home-slide -->
+    </div>
+    <!-- /.owl-home-slide -->
+
+    <!-- News -->
   <section class="section-news">
     <div class="container">
       <div class="row news_block">
@@ -47,6 +51,7 @@
 
       </div><!-- news_block -->
 
+<!-- Sponsors Slider -->
       <div class="owl-footer-slide">
         <?php $images = get_field('sponsors_gallery'); if( $images ): foreach( $images as $image ): ?>
           <div class="item-slide sponsors-footer-images">

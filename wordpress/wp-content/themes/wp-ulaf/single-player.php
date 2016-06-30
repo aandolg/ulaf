@@ -17,6 +17,8 @@
           <div class="col-md-9 player-character">
 
             <span class="quarterback-image"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/qb.png"></span>
+
+            <!-- Player description -->
             <ul class="description single-player">
               <li><?php the_title(); ?></li>
               <li><span>КОМАНДА :</span>  <?php
@@ -45,7 +47,7 @@
                   <li><span>ВЕС:</span> <?php the_field('weight');?></li>
                   <li><span>В КОМАНДЕ :</span> <?php the_field('experience');?></li>
                   <li><span>ИГРОВОЙ НОМЕР:</span> <?php the_field('player_number');?></li>
-           </ul>
+           </ul><!-- player description -->
          </div>
         </div><!--/ player-character -->
 

@@ -1,5 +1,7 @@
-
 <?php /* Template Name: friends and sponsors */ get_header(); ?>
+
+
+<!-- Friends and sponsors page -->
 <section class="section-news category">
     <div class="container">
     <?php query_posts(array( 'post_type' => 'friends','showposts' => 100 ) ); ?>
@@ -27,5 +29,7 @@
         <?php wp_reset_query(); ?>
     </div><!-- container -->
   </section><!-- section-news -->
+
+<!-- End of Page -->
 
 <?php get_footer(); ?>

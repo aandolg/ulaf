@@ -1,7 +1,7 @@
 <?php /* Template Name: Champioship Page */ get_header(); ?>
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <h1 class="page-title inner-title"><?php the_title(); ?></h1>
+
 
     <div class="container game-info">
       <h2>Дивизион B</h2>
