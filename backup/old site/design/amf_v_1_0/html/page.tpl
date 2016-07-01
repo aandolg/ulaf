@@ -1,0 +1,16 @@
+        {* Шаблон текстовой страницы *}
+
+{* Канонический адрес страницы *}
+{$canonical="/{$page->url}" scope=parent}
+
+<!-- Заголовок страницы -->
+<h1 data-page="{$page->id}">{$page->header|escape}</h1>
+
+<!-- Тело страницы -->
+{*{if $page->url!='about'}*}
+
+    {$page->body}
+{*{else}*}
+    {*<p>On February 1st, 2014 major changes in executive board of the Federation of American Football of Ukraine had occurred. Teams had expressed full trust and relied great hopes for the future.</p><p>But in the Ukrainian American football were no changes for the better. Conducting games, seminars, training Camp, search for partners and sponsors had been kept on teams initiative and funds.</p><p>National Federation of American Football of Ukraine hadn&rsquo;t done anything for development of the sport, instead NFAFU tried to bring teams to the impossible framework of existence. Inaction, lack of communication with teams, empty promises and mediocre interaction with potential partners and sponsors - this all had led to the demise of the American football National Team. The judicial reform was failed, players had lost motivation (as a result many talented youths had ended their gaming careers too early), also the trust of fans and players was lost.</p><p>Teams&rsquo; dissatisfaction was growing because of false statements and NFAFU representatives&rsquo; negative attitude. Representatives of the teams had tried to come to understanding with NFAFU representatives and find the solution.</p><p>At the annual reporting NFAFU conference, held December 12, 2015, many important questions remained unresolved.</p><p>After the conference representatives of the teams decided to stop any cooperation with NFAFU. Only the &ldquo;Knights&rdquo; (Kyiv) decided to continue cooperation with NFAFU.<br />On January 16, 2016 the Nationwide meeting of the American football teams was held. The result of meeting was the creation of an alternative association.<br />The founders were 15 teams, other teams acting on the basis of full membership. This is how the Ukrainian League of American Football was founded.</p><p>Our goals are:<br />- to popularize American football in Ukraine<br />- to improve the nation&rsquo;s health<br />- to promote healthy lifestyles<br />- to improve the Ukraine&rsquo;s rating on the international arena.<br />We start from very beginning! Wish us success !</p>*}
+    {*<div class="col-1-3 element"><div class="mosaic-block circle"><a href="/files/uploads/cdI5IcVx_0U.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" style="display: inline;"></a><div class="mosaic-backdrop" style="display: block;"><img src="/files/uploads/cdI5IcVx_0U.jpg" width="2560" height="1707" /></div></div></div><div class="col-1-3 element"><div class="mosaic-block circle"><a href="/files/uploads/kpZwWJoDTX8.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" style="display: inline;"></a><div class="mosaic-backdrop" style="display: block;"><img src="/files/uploads/kpZwWJoDTX8.jpg" width="2430" height="1734" /></div></div></div></div>*}
+{*{/if}*}

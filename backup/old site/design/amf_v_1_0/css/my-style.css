@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+*{font-family: 'Source Sans Pro', sans-serif;}
+#teams-list {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	padding: 0px!important;
+	margin: 0px;
+}
+#teams-list li{
+	padding: 0px;
+	display: inline-block;
+}
+#teams-list li img{
+	min-height: 20px;
+	max-height: 40px;
+	max-width: 45px;
+	padding: 10px 5px;
+}
+
+.teams-div {
+	width: 100%;
+	padding: 0px!important;
+	margin: 0px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.pre-header-area {
+    background-color: #0D1A3B;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+
+
+.nav a, #navigation a, h4, h5, h6, .price h3 span, .price-cell:first-child, table th, .event-table .evt-date, .evt-price, .pagination, .reply, .big-count div span {
+   font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+}
+
+#navigation a {   
+	font-size: 13px;
+    text-transform: uppercase;
+}
+.language_switch{
+    position: absolute;
+    background: none!important;
+    right: 15px;
+    top: 20px;
+    width: 40px;
+    transition: all .250s ease-in;
+    padding: 5px;
+}
+.language_switch li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 5px;
+    transition: all .250s ease-in;
+}
+
+
+.language_switch:hover{
+     background: #FFBE00!important;
+     border-radius: 5px 5px 5px 5px;
+     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0);
+     transition: all .250s ease-in;
+}
+
+
+
+.language_switch li a{
+    padding: 0px!important;
+}
+
+.language_switch li .fa{
+    padding-left: 5px!important;
+    padding-top: 5px!important;
+}
+
+
+
+.new_l{
+    position: absolute;
+    /*left: -56px;*/
+    color:red;
+    width: 170px;
+    font-weight: 800;
+}
+
+.sub_logo{
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 6px;
+}
+
+.name_l{
+    width: 63px;
+    float: left;
+    font-size: 26px;
+    /*font-family: sans-serif!important;*/
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.post-header-right{
+    /*margin-left: 170px!important;*/
+    margin-left: 115px!important;
+}
+
+.language_switch li:not(:first-child){
+    display: none;
+}
+
+
+
+
+.pagination{
+    text-align: center;
+}
+
+.pagination .selected{
+    color: rgb(255, 190, 0);
+}
+
+
+.pagination{
+    margin-top: 10px;
+}
+
+p{    line-height: 1.7;}
+
+.img-news-main{
+	background-size: cover;
+	width: 100%;
+	height: 250px;
+	background-position: top center;
+	background-repeat: no-repeat;
+
+}
+.title > a {
+	line-height: 1.5;
+}
+
+.inner-box > h2 {color:#fff;}
+
+ul.article_list li{
+    list-style: none;
+    display: block;
+}
+.social-links li img{
+    border-radius: 7px;
+    width: 30px;
+}

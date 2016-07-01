@@ -1,0 +1,5 @@
+AddType application/octet-stream csv
+AuthName "Simpla CMS"
+AuthType Basic
+AuthUserFile /var/www/ulafuacom/data/www/ulafua.com/simpla/.passwd
+require valid-user

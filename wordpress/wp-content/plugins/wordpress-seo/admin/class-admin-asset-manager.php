@@ -102,7 +102,7 @@ class WPSEO_Admin_Asset_Manager {
 		return array(
 			'inside-editor' => new WPSEO_Admin_Asset( array(
 				'name' => 'inside-editor',
-				'src' => 'inside-editor-330',
+				'src' => 'inside-editor-331',
 			) ),
 		);
 	}
@@ -141,18 +141,13 @@ class WPSEO_Admin_Asset_Manager {
 				'deps' => array( 'jquery' ),
 			),
 			array(
-				'name' => 'export',
-				'src'  => 'wp-seo-export-320',
-				'deps' => array( 'jquery' ),
-			),
-			array(
 				'name' => 'dismissible',
 				'src'  => 'wp-seo-dismissible-330',
 				'deps' => array( 'jquery' ),
 			),
 			array(
 				'name' => 'admin-global-script',
-				'src'  => 'wp-seo-admin-global-330',
+				'src'  => 'wp-seo-admin-global-332',
 				'deps' => array( 'jquery' ),
 			),
 			array(
@@ -182,7 +177,7 @@ class WPSEO_Admin_Asset_Manager {
 			),
 			array(
 				'name' => 'post-scraper',
-				'src'  => 'wp-seo-post-scraper-330',
+				'src'  => 'wp-seo-post-scraper-333',
 				'deps' => array(
 					self::PREFIX . 'replacevar-plugin',
 					self::PREFIX . 'shortcode-plugin',
@@ -191,7 +186,7 @@ class WPSEO_Admin_Asset_Manager {
 			),
 			array(
 				'name' => 'term-scraper',
-				'src'  => 'wp-seo-term-scraper-330',
+				'src'  => 'wp-seo-term-scraper-332',
 				'deps' => array(
 					self::PREFIX . 'replacevar-plugin',
 				),
@@ -291,7 +286,7 @@ class WPSEO_Admin_Asset_Manager {
 			),
 			array(
 				'name' => 'metabox-css',
-				'src'  => 'metabox-330',
+				'src'  => 'metabox-331',
 				'deps' => array(
 					self::PREFIX . 'select2',
 				),
@@ -324,11 +319,11 @@ class WPSEO_Admin_Asset_Manager {
 			),
 			array(
 				'name' => 'kb-search',
-				'src'  => 'kb-search',
+				'src'  => 'kb-search-331',
 			),
 			array(
 				'name' => 'help-center',
-				'src'  => 'help-center-330',
+				'src'  => 'help-center-331',
 			),
 			array(
 				'name' => 'admin-global',
