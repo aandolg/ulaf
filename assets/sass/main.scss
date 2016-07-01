@@ -152,6 +152,12 @@ picture {
         margin-bottom: 5px;
         &:hover > ul {
           display: block !important;
+          a {
+          color:#fff;
+          &:hover {
+            color:$gold;
+          }
+        }
         }
         ul {
           position: absolute;
@@ -1101,6 +1107,11 @@ footer {
     border-bottom: 1px solid grey;
     div {
       border: none;
+      overflow:hidden;
+      img {
+        width:370px;
+        height:auto;
+      }
     }
   }
   a {
@@ -1220,6 +1231,9 @@ footer {
   }
 }
 .game-info {
+  &:first-child {
+    padding-top: 35px;
+  }
   h2 {
     margin-bottom: -20px;
 
@@ -1467,7 +1481,7 @@ footer {
 @media (max-width:475px) {
   .col-md-12 .team-character {
     .team-logo {
-      img{
+      img {
         display: none !important;
       }
     }
@@ -1508,14 +1522,14 @@ footer {
     }
   }
 
-.description {
-  font-size: 10px;
-}
+  .description {
+    font-size: 10px;
+  }
 }
 
 /* media query*/
- .owl-controls {
-  display:none !important;
+.owl-controls {
+  display: none !important;
 }
 
 @import 'import/print';

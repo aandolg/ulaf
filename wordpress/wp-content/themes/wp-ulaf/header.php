@@ -26,6 +26,7 @@
 <!-- wrapper -->
 <div class="wrapper">
 
+<!-- Navbar -->
   <header class="navbar">
     <div class="container">
       <div class="row">
@@ -41,6 +42,7 @@
     </div><!-- .container -->
   </header><!-- navbar -->
 
+<!-- Teams logo -->
     <section class="section-teams">
         <div class="container">
             <div class="row">

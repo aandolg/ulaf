@@ -11,7 +11,7 @@
               </a>
             <?php endif; ?><!-- /post thumbnail -->
           </div><!-- /.player-main-photo -->
-          <div class="col-md-6 player-character">
+          <div class="col-md-6 player-character"><!-- player-character  -->
             <ul class="description people">
                   <li><?php the_title(); ?></li>
                   <li>КОМАНДА :</li>

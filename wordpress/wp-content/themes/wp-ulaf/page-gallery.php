@@ -4,21 +4,23 @@
 <div class="section content">
       <div class="container">
         <div class="row">
+
+        <!-- Gallery Page -->
           <div class="col-md-12 gallery">
-          <p><?php the_content(); ?></p>
+            <p><?php the_content(); ?></p>
               <?php $images = get_field('gallery'); if( $images ): ?>
-    <ul>
-        <?php foreach( $images as $image ): ?>
-            <li>
+            <ul>
+              <?php foreach( $images as $image ): ?>
+              <li>
                 <a href="<?php echo $image['url']; ?>">
                   <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
                 </a>
                 <p><?php echo $image['caption']; ?></p>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-<?php endif; ?>
-          </div>
+              </li>
+                <?php endforeach; ?>
+          </ul>
+        <?php endif; ?>
+          </div> <!-- gallery -->
         </div>
       </div>
     </div>
