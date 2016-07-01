@@ -39,6 +39,12 @@
 
 <!-- End of Socials -->
 
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.theme.default.min.css">
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/tableHeadFixer.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 
 
 

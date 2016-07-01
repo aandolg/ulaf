@@ -1,5 +1,6 @@
-@import 'pingvin';
+@import 'import/reset';
 @import 'import/variables';
+@import 'pingvin';
 @import 'import/buttons';
 @import 'import/forms';
 @import 'import/lists';
@@ -12,6 +13,23 @@
 @import 'fonts/font_roboto';
 @import 'owl.carousel.min';
 
+.clearfix {
+  *zoom: 1;
+  &:before {
+    display: table;
+
+    content: '';
+  }
+  &:after {
+    display: table;
+    clear: both;
+
+    content: '';
+  }
+}
+.clear {
+  clear: both;
+}
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -113,12 +131,11 @@ picture {
 }
 .header-nav {
   padding-top: 20px;
-  ul {
-    @extend clearfix;
+  .headnav {
+    @extend .clearfix;
     @extend .justify-child;
   }
   li {
-    position: relative;
 
     display: inline-block;
     .sub-menu {
@@ -1517,3 +1534,5 @@ footer {
 }
 
 @import 'import/print';
+@import 'owl/owl.carousel.min';
+@import 'owl/owl.theme.default.min';
